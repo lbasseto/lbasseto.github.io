@@ -6,6 +6,7 @@
   <title>studio ailiers</title>
   <meta name="description" content="studio ailiers — Number Drop &amp; Dungeons 80.">
   <meta name="theme-color" content="#000000">
+  <link rel="icon" href="wing.svg" type="image/svg+xml">
   <style>
     @font-face {
       font-family: "Cormorant Garamond";
@@ -34,22 +35,34 @@
       min-height: 100vh;
       max-width: 560px;
       margin: 0 auto;
-      padding: 56px 24px 48px;
+      padding: 64px 24px 48px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
-      gap: 48px;
+      gap: 64px;
     }
-    .logo-wrap {
-      width: 100%;
-      max-width: 460px;
+    .brand {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
     }
-    .logo-wrap img {
-      display: block;
-      width: 100%;
+    .wing {
+      width: 154px;
       height: auto;
+      display: block;
+      transform: translateX(5px);
+    }
+    .studio-name {
+      font-size: 2.15rem;
+      font-weight: 400;
+      letter-spacing: 0.25em;
+      padding-left: 0.25em;
+      color: #ffffff;
+      line-height: 1.15;
+      text-transform: lowercase;
     }
     .games {
       list-style: none;
@@ -62,17 +75,18 @@
       font-size: 1.25rem;
       font-weight: 400;
       letter-spacing: 0.22em;
+      padding-left: 0.22em;
       color: #ffffff;
       margin-bottom: 4px;
     }
     .game-desc {
-      font-size: 0.98rem;
+      font-size: 1rem;
       font-weight: 400;
       letter-spacing: 0.04em;
       color: #8c8c8c;
     }
     footer {
-      margin-top: 12px;
+      margin-top: 8px;
       font-size: 0.9rem;
       letter-spacing: 0.14em;
       color: #5e5e5e;
@@ -94,9 +108,12 @@
 </head>
 <body>
   <main>
-    <div class="logo-wrap">
-      <img src="StudioLogo.png" alt="studio ailiers" width="1672" height="941">
-    </div>
+    <header class="brand">
+      <svg class="wing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 270" fill="#ffffff" role="img" aria-hidden="true">
+        <path d="M 313.00 5.04 C 306.09 17.29, 298.46 28.99, 288.74 39.25 C 259.44 70.17, 219.61 88.59, 180.01 102.53 C 160.20 109.50, 139.99 115.29, 119.91 121.40 C 91.83 129.95, 64.22 140.20, 44.05 162.56 C 29.49 178.68, 20.89 197.82, 13.51 217.99 C 8.30 232.23, 4.98 247.45, 5.00 262.59 C 7.68 259.62, 10.19 256.34, 13.12 253.61 C 22.34 245.03, 32.83 239.21, 45.28 236.84 C 64.19 233.24, 83.68 237.18, 102.15 241.37 C 135.40 248.92, 173.28 258.65, 204.86 240.37 C 211.12 236.74, 216.86 232.61, 221.95 227.45 C 228.22 221.08, 233.33 214.02, 237.16 206.00 C 225.43 209.19, 214.07 212.92, 201.88 214.24 C 167.46 217.94, 132.91 211.80, 99.24 205.00 C 110.46 204.11, 121.72 204.57, 133.00 204.28 C 140.91 204.07, 148.89 203.60, 156.78 203.07 C 196.89 200.40, 243.23 192.99, 268.07 157.58 C 271.01 153.40, 273.83 149.15, 275.99 144.50 C 279.66 136.59, 282.66 128.82, 284.00 120.25 C 275.38 126.19, 266.87 132.22, 257.54 137.02 C 237.03 147.57, 214.70 154.16, 192.18 158.72 C 176.19 161.96, 159.66 164.77, 143.41 165.00 C 153.40 162.40, 163.36 159.78, 173.23 156.72 C 220.79 142.00, 273.55 121.45, 298.65 75.16 C 304.29 64.75, 307.98 53.66, 310.66 42.18 C 313.54 29.86, 313.94 17.58, 313.00 5.04 Z"/>
+      </svg>
+      <h1 class="studio-name">studio ailiers</h1>
+    </header>
 
     <ul class="games" aria-label="Games">
       <li>
