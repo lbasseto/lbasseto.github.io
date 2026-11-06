@@ -67,23 +67,28 @@
     .games {
       list-style: none;
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 48px 64px;
+    }
+    .game {
+      display: flex;
       flex-direction: column;
-      gap: 28px;
-      max-width: 420px;
+      align-items: center;
+      gap: 16px;
+    }
+    .game-icon {
+      width: 96px;
+      height: 96px;
+      border-radius: 22.5%;
+      display: block;
     }
     .game-title {
-      font-size: 1.25rem;
+      font-size: 1.15rem;
       font-weight: 400;
-      letter-spacing: 0.22em;
-      padding-left: 0.22em;
-      color: #ffffff;
-      margin-bottom: 4px;
-    }
-    .game-desc {
-      font-size: 1rem;
-      font-weight: 400;
-      letter-spacing: 0.04em;
-      color: #8c8c8c;
+      letter-spacing: 0.2em;
+      padding-left: 0.2em;
+      color: #d8d8d8;
     }
     footer {
       margin-top: 8px;
@@ -116,13 +121,13 @@
     </header>
 
     <ul class="games" aria-label="Games">
-      <li>
+      <li class="game">
+        <img class="game-icon" src="number-drop-icon.png" alt="Number Drop" width="256" height="256">
         <h2 class="game-title">Number Drop</h2>
-        <p class="game-desc">One tap. One number. Chain reactions in a 3D cube puzzle.</p>
       </li>
-      <li>
+      <li class="game">
+        <img class="game-icon" src="dungeons-80-icon.png" alt="Dungeons 80" width="256" height="256">
         <h2 class="game-title">Dungeons 80</h2>
-        <p class="game-desc">Hack-and-slash dark fantasy. Lose the crown, climb eighty floors back to the throne.</p>
       </li>
     </ul>
 
