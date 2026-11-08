@@ -95,6 +95,23 @@
     a:hover {
       color: #ffffff;
     }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 14px;
+      font-size: 1.02rem;
+      color: #c4c4c4;
+    }
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 8px 10px 8px 0;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      color: #ffffff;
+      font-weight: 600;
+    }
     footer {
       margin-top: 48px;
       padding-top: 24px;
@@ -114,7 +131,7 @@
     <header>
       <a class="back-link" href="index.html">&larr; studio ailiers</a>
       <h1>Privacy Policy</h1>
-      <p class="meta">Number Drop &middot; Dungeons 80 &middot; Last updated: November 6, 2026</p>
+      <p class="meta">Number Drop &middot; Dungeons 80 &middot; Last updated: November 8, 2026</p>
     </header>
 
     <section>
@@ -127,6 +144,20 @@
         <li><strong>Controller:</strong> studio ailiers</li>
         <li><strong>Contact:</strong> <a href="mailto:contact@studioailiers.com">contact@studioailiers.com</a></li>
       </ul>
+      <p>Each game, its platforms and the services it uses:</p>
+      <table>
+        <tr><th>Game</th><th>Platforms</th><th>Services</th></tr>
+        <tr>
+          <td>Number Drop</td>
+          <td>iPhone, Android</td>
+          <td>Google AdMob and Google UMP (ads and consent), Apple StoreKit 2 (iPhone) and Google Play Billing (Android) for in-app purchases</td>
+        </tr>
+        <tr>
+          <td>Dungeons 80</td>
+          <td>iPhone, Mac</td>
+          <td>None: no personal data leaves your device</td>
+        </tr>
+      </table>
     </section>
 
     <section>
@@ -136,20 +167,23 @@
         transmit, or store personal data off your device. Game progress and preferences are saved locally on your
         device. For beta builds distributed via Apple TestFlight, Apple may collect crash logs and tester feedback in
         accordance with <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's Privacy Policy</a>.
+        For test builds distributed through Google Play's testing tracks, Google may collect crash and performance
+        data in accordance with <a href="https://policies.google.com/privacy" rel="noopener">Google's Privacy Policy</a>.
       </p>
     </section>
 
     <section>
-      <h2>3. Live &amp; Commercial Builds (AdMob, Firebase &amp; StoreKit 2)</h2>
+      <h2>3. Live &amp; Commercial Builds (AdMob, Firebase &amp; In-App Purchases)</h2>
       <p>
-        In live App Store releases that include advertising, analytics, remote configuration, and in-app purchases,
+        In live App Store and Google Play releases that include advertising, analytics, remote configuration, and in-app purchases,
         our games may integrate the following services:
       </p>
       <ul>
         <li>
-          <strong>Google AdMob (Advertising):</strong> Serves advertisements. Depending on your consent and iOS tracking
-          permissions, Google AdMob may process device identifiers (such as the iOS Identifier for Advertisers / IDFA
-          or app-set ID), coarse IP-based location, ad interaction data, and diagnostic signals for ad delivery,
+          <strong>Google AdMob (Advertising):</strong> Serves advertisements. Depending on your consent and your device's
+          settings, Google AdMob may process device identifiers (on iOS, the Identifier for Advertisers / IDFA only
+          with your permission, otherwise the identifier for vendors; on Android, the app set ID; our Android games do
+          not request access to the Android advertising ID), coarse IP-based location, ad interaction data, and diagnostic signals for ad delivery,
           frequency capping, and fraud prevention.
         </li>
         <li>
@@ -161,6 +195,10 @@
           <strong>Apple StoreKit 2 (In-App Purchases):</strong> All payment transactions are processed directly by
           Apple through the App Store. studio ailiers never receives or stores your payment details.
         </li>
+        <li>
+          <strong>Google Play Billing (In-App Purchases, Android):</strong> All payment transactions are processed
+          directly by Google through Google Play. studio ailiers never receives or stores your payment details.
+        </li>
       </ul>
       <p>
         To learn more about how Google processes data, please see
@@ -170,18 +208,23 @@
     </section>
 
     <section>
-      <h2>4. GDPR / UK Consent (Google UMP) &amp; iOS App Tracking Transparency (ATT / IDFA)</h2>
+      <h2>4. GDPR / UK Consent (Google UMP), iOS App Tracking Transparency (ATT / IDFA) &amp; Android</h2>
       <ul>
         <li>
           <strong>EEA, UK, and Switzerland (GDPR / Google UMP):</strong> Players in the European Economic Area, the
           United Kingdom, or Switzerland are presented with a consent form via Google's User Messaging Platform (UMP)
-          before ads are served. You can review, change, or withdraw your consent choices at any time from the
-          <strong>Privacy Settings</strong> option in the game's settings menu.
+          before ads are served. You can review, change, or withdraw your consent choices at any time from
+          <strong>PRIVACY CHOICES</strong> in the game's menu.
         </li>
         <li>
           <strong>iOS App Tracking Transparency (ATT / IDFA):</strong> On iOS, the Apple Identifier for Advertisers
           (IDFA) is never accessed unless you grant permission in Apple's system prompt. You can revoke or change this
           permission at any time in <strong>iOS Settings &rarr; Privacy &amp; Security &rarr; Tracking</strong>.
+        </li>
+        <li>
+          <strong>Android:</strong> Our Android games do not access the Android advertising ID. You can reset or
+          delete it at any time in <strong>Android Settings &rarr; Privacy &rarr; Ads</strong> (or Google &rarr; Ads,
+          depending on your device).
         </li>
       </ul>
     </section>
@@ -208,7 +251,7 @@
         personal data, to opt out of targeted advertising, and to withdraw consent at any time:
       </p>
       <ul>
-        <li>Update ad consent in the game's <strong>Privacy Settings</strong> or in <strong>iOS Settings &rarr; Privacy &amp; Security &rarr; Tracking</strong>.</li>
+        <li>Update ad consent in the game's <strong>PRIVACY CHOICES</strong>, in <strong>iOS Settings &rarr; Privacy &amp; Security &rarr; Tracking</strong>, or in <strong>Android Settings &rarr; Privacy &rarr; Ads</strong>.</li>
         <li>Uninstall the app to remove all local data and app-scoped identifiers.</li>
         <li>Contact us at <a href="mailto:contact@studioailiers.com">contact@studioailiers.com</a>.</li>
       </ul>
