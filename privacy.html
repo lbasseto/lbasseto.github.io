@@ -131,7 +131,7 @@
     <header>
       <a class="back-link" href="index.html">&larr; studio ailiers</a>
       <h1>Privacy Policy</h1>
-      <p class="meta">Number Drop &middot; Dungeons 80 &middot; Last updated: November 8, 2026</p>
+      <p class="meta">Number Drop &middot; Dungeons 80 &middot; Last updated: November 13, 2026</p>
     </header>
 
     <section>
@@ -150,7 +150,7 @@
         <tr>
           <td>Number Drop</td>
           <td>iPhone, Android</td>
-          <td>Google AdMob and Google UMP (ads and consent), Apple StoreKit 2 (iPhone) and Google Play Billing (Android) for in-app purchases, Apple Game Center (iPhone) and Google Play Games (Android) for leaderboards, achievements and challenges</td>
+          <td>Google AdMob and Google UMP (ads and consent), Google Analytics for Firebase and Firebase Remote Config (the game's measures), Apple StoreKit 2 (iPhone) and Google Play Billing (Android) for in-app purchases, Apple Game Center (iPhone) and Google Play Games (Android) for leaderboards, achievements and challenges</td>
         </tr>
         <tr>
           <td>Dungeons 80</td>
@@ -163,9 +163,10 @@
     <section>
       <h2>2. Offline &amp; TestFlight Builds</h2>
       <p>
-        In offline or TestFlight builds without advertising or analytics SDKs enabled, our games do not collect,
-        transmit, or store personal data off your device. Game progress and preferences are saved locally on your
-        device. For beta builds distributed via Apple TestFlight, Apple may collect crash logs and tester feedback in
+        Dungeons 80 does not collect, transmit, or store personal data off your device. Game progress and preferences
+        are saved locally on your device. Number Drop's TestFlight and other test builds carry the same services as its
+        live builds (described below), with Google's test ads, and send the same measures after consent, marked as
+        coming from testers. For beta builds distributed via Apple TestFlight, Apple may collect crash logs and tester feedback in
         accordance with <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's Privacy Policy</a>.
         For test builds distributed through Google Play's testing tracks, Google may collect crash and performance
         data in accordance with <a href="https://policies.google.com/privacy" rel="noopener">Google's Privacy Policy</a>.
@@ -187,9 +188,21 @@
           frequency capping, and fraud prevention.
         </li>
         <li>
-          <strong>Google Firebase (Analytics &amp; Remote Configuration):</strong> Measures aggregate gameplay
-          progression, balance, app stability, and remote configuration parameters using app-instance identifiers,
-          basic device information, and in-game event telemetry.
+          <strong>Google Analytics for Firebase and Firebase Remote Config (Number Drop's measures):</strong> Where
+          consent is required (the EEA, the UK and Switzerland), the game sends nothing to Firebase until you agree in
+          Google's consent form; elsewhere it starts once the game has checked with Google that no consent is required.
+          Before then, and whenever consent is refused or withdrawn, events are dropped, never kept for later. The events
+          say how the game is played: levels started and finished, with their result, the moves used and left, the stars
+          and the jokers used; tutorial steps; running out of lives; rewarded ads offered and watched; visits to the shop
+          and jokers bought with coins; and the daily challenge's streak. They hold numbers and the game's own short
+          labels, never anything you type. Firebase adds its own events (first open, sessions, screens viewed), reads the
+          stores' in-app purchases to count them, and, through its link to AdMob, reports what each ad earned. All of it
+          is tied to a random ID Firebase makes for this installation, never to your name, an account or the advertising
+          ID (the measures never read the iOS IDFA or the Android advertising ID), and it is not used to track you across
+          other companies' apps or websites. Google derives an approximate location from your IP address, and receives
+          your device's model, system and language. The game also downloads settings from Firebase Remote Config, to
+          test changes such as the level before which the first ad between levels appears. Google processes this data
+          for us, as our service provider.
         </li>
         <li>
           <strong>Apple StoreKit 2 (In-App Purchases):</strong> All payment transactions are processed directly by
@@ -234,8 +247,9 @@
         <li>
           <strong>EEA, UK, and Switzerland (GDPR / Google UMP):</strong> Players in the European Economic Area, the
           United Kingdom, or Switzerland are presented with a consent form via Google's User Messaging Platform (UMP)
-          before ads are served. You can review, change, or withdraw your consent choices at any time from
-          <strong>PRIVACY CHOICES</strong> in the game's menu.
+          before ads are served or the game's measures are sent. You can review, change, or withdraw your consent
+          choices at any time from <strong>PRIVACY CHOICES</strong> in the game's settings; refusing or withdrawing
+          consent also stops the measures. Elsewhere, the measures are part of the game; uninstalling it stops them.
         </li>
         <li>
           <strong>iOS App Tracking Transparency (ATT / IDFA):</strong> On iOS, the Apple Identifier for Advertisers
@@ -254,8 +268,8 @@
       <h2>5. Legal Bases &amp; Data Retention</h2>
       <p>
         Where GDPR / UK GDPR applies, data is processed based on your consent (Art. 6(1)(a) GDPR) for personalised
-        advertising and tracking, legitimate interests (Art. 6(1)(f) GDPR) for security, fraud prevention, crash
-        diagnostics, and aggregated balance telemetry, and performance of a contract (Art. 6(1)(b) GDPR) for in-app
+        advertising, tracking, and the game's measures (analytics and remote configuration), legitimate interests
+        (Art. 6(1)(f) GDPR) for security, fraud prevention, and crash diagnostics, and performance of a contract (Art. 6(1)(b) GDPR) for in-app
         purchases and player support.
       </p>
       <p>
@@ -272,7 +286,7 @@
         personal data, to opt out of targeted advertising, and to withdraw consent at any time:
       </p>
       <ul>
-        <li>Update ad consent in the game's <strong>PRIVACY CHOICES</strong>, in <strong>iOS Settings &rarr; Privacy &amp; Security &rarr; Tracking</strong>, or in <strong>Android Settings &rarr; Privacy &rarr; Ads</strong>.</li>
+        <li>Update ad and measures consent in the game's <strong>PRIVACY CHOICES</strong>, in <strong>iOS Settings &rarr; Privacy &amp; Security &rarr; Tracking</strong>, or in <strong>Android Settings &rarr; Privacy &rarr; Ads</strong>.</li>
         <li>Uninstall the app to remove all local data and app-scoped identifiers.</li>
         <li>Manage or delete your Game Center data in <strong>iOS Settings &rarr; Game Center</strong> (and through <a href="https://privacy.apple.com/" rel="noopener">privacy.apple.com</a>), and your Play Games data in the Play Games app or your Google Account.</li>
         <li>Contact us at <a href="mailto:contact@studioailiers.com">contact@studioailiers.com</a>.</li>
