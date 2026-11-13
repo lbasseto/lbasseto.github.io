@@ -183,8 +183,9 @@
         <li>
           <strong>Google AdMob (Advertising):</strong> Serves advertisements. Depending on your consent and your device's
           settings, Google AdMob may process device identifiers (on iOS, the Identifier for Advertisers / IDFA only
-          with your permission, otherwise the identifier for vendors; on Android, the app set ID; our Android games do
-          not request access to the Android advertising ID), coarse IP-based location, ad interaction data, and diagnostic signals for ad delivery,
+          with your permission in Apple's App Tracking Transparency prompt, otherwise the identifier for vendors; on
+          Android, the app set ID and, in Number Drop's Google Play build, the Android advertising ID, for ads only and
+          after consent where it is required), coarse IP-based location, ad interaction data, and diagnostic signals for ad delivery,
           frequency capping, and fraud prevention.
         </li>
         <li>
@@ -257,8 +258,9 @@
           permission at any time in <strong>iOS Settings &rarr; Privacy &amp; Security &rarr; Tracking</strong>.
         </li>
         <li>
-          <strong>Android:</strong> Our Android games do not access the Android advertising ID. You can reset or
-          delete it at any time in <strong>Android Settings &rarr; Privacy &rarr; Ads</strong> (or Google &rarr; Ads,
+          <strong>Android:</strong> Number Drop's Google Play build asks for the Android advertising ID, which Google
+          AdMob uses for ads only, after consent where it is required; the game's measures never use it, and its test
+          builds do not ask for it. Dungeons 80 uses no advertising ID. You can reset or delete it at any time in <strong>Android Settings &rarr; Privacy &rarr; Ads</strong> (or Google &rarr; Ads,
           depending on your device).
         </li>
       </ul>
